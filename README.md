@@ -1,10 +1,7 @@
 # Self-Remap Code
 
-The idea comes from this amazing 
+The idea comes from this amazing [repository](https://github.com/changeofpace/Self-Remapping-Code).
 
-[repository]: https://github.com/changeofpace/Self-Remapping-Code	"repository"
-
-.
 
 ## Summary
 
@@ -21,6 +18,10 @@ This program is able to remap itself to prevent debugging or dumping. This progr
 * Syscall used : NtCreateSection, NtMapViewOfSection, NtUnmapViewOfSection, NtClose
 * Custom headers
 
+> [!NOTE]
+>
+> The program must be compiled with section aligned to a block of  memory (64kb) or system granularity instead of page alignment (4kb).
+
 ## Improvements
 
 * Indirect syscalls
@@ -30,11 +31,4 @@ This program is able to remap itself to prevent debugging or dumping. This progr
 
 ## Scheme
 
-![Mapper](C:\Users\Arsium\Downloads\Mapper.png)
-
-> [!NOTE]
->
-> The program must be compiled with section aligned to a block of  memory (64kb) or system granularity instead of page alignment (4kb).
-
-
-
+![Mapper](https://github.com/arsium/Self-Remap-Code/blob/main/Mapper.png?raw=true)
